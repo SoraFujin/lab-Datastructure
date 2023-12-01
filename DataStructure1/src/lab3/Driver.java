@@ -35,6 +35,9 @@ public class Driver {
 		 System.out.println("search method test:");
 		 System.out.println("searching for an existing element: \n" + list.search(60));
 		 System.out.println("searching for an element that is not in the list: \n" + list.search(0));
+		 System.out.println("-----------");		 
+		 list.delete(40);
+		 list.traverse();
 	}
 
 }
