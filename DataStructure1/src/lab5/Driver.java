@@ -1,7 +1,6 @@
 package lab5;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,6 +12,10 @@ public class Driver {
 		readFile("C:\\Users\\HP\\OneDrive\\Desktop\\eclipse\\lab1\\src\\lab1//lab.java");
 		System.out.println(checkBalance("C:\\Users\\HP\\OneDrive\\Desktop\\eclipse\\lab1\\src\\lab1//lab.java"));
 		System.out.println(infixToPostfix("5 + 16 - 20 * 5 / 6"));
+		System.out.println(evaluatePostfix("5 16 + 20 5 * 6 / -"));
+		
+		double i = (5 + 16 - 20 * 5 / 6);
+		System.out.println(i);
 
 	}
 

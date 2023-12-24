@@ -1,29 +1,10 @@
-package lab5;
+package lab6;
 
 public class Node<T extends Comparable<T>> {
 	private T data;
 	private Node<T> next;
-	private int cursor;
-	
-	public Node(T data, Node<T> next) {
-		this.data = data;
-		this.next = next;
-	}
-	
-	public Node(T data, int cursor) {
-		this.data = data;
-		this.cursor = cursor;
-	}
-	
-	public int getCursor() {
-		return cursor;
-	}
 
-	public void setCursor(int cursor) {
-		this.cursor = cursor;
-	}
-
-	public Node (T data) {
+	public Node(T data) {
 		this.data = data;
 	}
 

@@ -1,8 +1,6 @@
-package lab5;
-
+package lab6;
 
 public class LinkedList<T extends Comparable<T>> {
-
 	private Node<T> head;
 
 	public void addAtHead(T data) {
@@ -20,7 +18,19 @@ public class LinkedList<T extends Comparable<T>> {
 			current.setNext(head);
 		}
 	}
-
+	
+	 public void addLast(T data) {
+	        Node<T> newNode = new Node<>(data);
+	        if (head == null) {
+	            head = newNode; 
+	        } else {
+	            Node<T> current = head;
+	            while (current.getNext() != null) {
+	                current = current.getNext(); 
+	            }
+	            current.setNext(newNode); 
+	        }
+	    }
 	public T deleteAtHead() {
 		if (head != null) {
 			T data = head.getData();

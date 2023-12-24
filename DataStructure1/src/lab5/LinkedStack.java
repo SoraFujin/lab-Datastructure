@@ -32,5 +32,4 @@ public class LinkedStack<T extends Comparable<T>> implements Stackable<T> {
 	public void clear() {
 		list.setHead(null);
 	}
-
 }
